@@ -5,62 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Escola Sergipana</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Estilos de Integração e Interatividade */
-        .detran-select-emissor {
-            width: 100%;
-            padding: 4px;
-            border: 1px solid #767676;
-            font-size: 0.75rem;
-            font-family: Arial, sans-serif;
-            background-color: white;
-        }
-        .detran-select-emissor option:checked {
-            background-color: #003399;
-            color: white;
-        }
-        .emissor-group-flex {
-            display: flex;
-            gap: 10px;
-            width: 100%;
-        }
-        .portal-box-roxa {
-            border: 3px solid #8e44ad !important;
-            background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 8px;
-            padding: 15px;
-        }
-        /* Estilos para os Cards de Pagamento Interativos */
-        .pay-card {
-            border: 1px solid #ccc;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.65rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            background: white;
-        }
-        .pay-card:hover {
-            border-color: #8e44ad;
-            background: #f5f0ff;
-        }
-        .pay-card.active {
-            background: #eef2f7;
-            border-color: #1a428a;
-            color: #1a428a;
-            font-weight: bold;
-            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
-        }
-        .input-detran-interativo {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-top: 5px;
-            font-size: 0.8rem;
-        }
-    </style>
 </head>
 <body>
 
@@ -72,7 +16,7 @@
         <div class="content-section">
             <h1>AUTO ESCOLA<br>SERGIPANA</h1>
             <div class="subtitle">APRESENTAÇÃO DE SERVIÇOS</div>
-            <div style="width: 100%; display: flex; justify-content: center;">
+            <div class="container-btn-home">
                 <a href="#cadastro" class="btn-universal">CADASTRE-SE</a>
             </div>
         </div>
@@ -90,7 +34,7 @@
                 <div class="input-group"><label>TELEFONE</label><input type="tel" required></div>
                 <div class="input-group"><label>ENDEREÇO</label><input type="text" required></div>
                 <div class="input-group"><label>EMAIL</label><input type="email" required></div>
-                <div style="display: flex; justify-content: flex-end; margin-top: 15px;">
+                <div class="container-btn-confirmar">
                     <button type="submit" class="btn-universal"><span class="check-circle">✓</span> CONFIRMAR</button>
                 </div>
             </form>
@@ -105,7 +49,7 @@
                 <p>CURSOS PROFISSIONALIZANTES E CNH</p>
             </div>
         </header>
-        <main class="form-padding" style="justify-content: center; height: 100%;">
+        <main class="form-padding main-servicos">
             <a href="#inscricao" class="btn-servico">PRIMEIRA HABILITAÇÃO</a>
             <a href="#renovacao-passo3" class="btn-servico">RENOVAÇÃO DE CNH</a>
             <a href="#agendamento" class="btn-servico">AGENDAMENTO</a>
@@ -145,7 +89,7 @@
                             <option>TRE - TRIBUNAL REGIONAL ELEITORAL -</option>
                         </select>
                     </div>
-                    <div style="display: flex; align-items: flex-end;">
+                    <div class="container-btn-grid">
                         <button type="submit" class="btn-grid-confirm"><span class="check-circle">✓</span> CONFIRMAR</button>
                     </div>
                 </div>
@@ -161,18 +105,18 @@
                 <p>RENOVAÇÃO DE CNH:</p>
             </div>
         </header>
-        <main class="form-padding" style="justify-content: center; padding: 0 50px;">
-            <p style="color: #003366; font-weight: 900; margin-bottom: 25px;">PREENCHA OS DADOS SEGUINTES:</p>
+        <main class="form-padding main-renovacao">
+            <p class="titulo-sessao">PREENCHA OS DADOS SEGUINTES:</p>
             <div class="detran-wrapper">
                 <div class="detran-form">
                     <div class="detran-header">IDENTIFICAÇÃO DO CONDUTOR</div>
                     <div class="detran-body">
                         <div class="detran-row">
                             <label><strong>CPF :</strong></label>
-                            <input type="text" placeholder="123.456.789-00" style="width: 130px; padding: 5px;">
+                            <input type="text" placeholder="123.456.789-00" class="input-cpf-small">
                         </div>
-                        <div class="emissor-group-flex" style="margin-top: 15px;">
-                            <div style="flex: 2;">
+                        <div class="emissor-group-flex">
+                            <div class="flex-grow-2">
                                 <label><strong>Órgão Emissor:</strong></label>
                                 <select class="detran-select-emissor">
                                     <option>SNJ - SECRETARIA NACIONAL DA JUSTIÇA -</option>
@@ -182,7 +126,7 @@
                                     <option>TJ - TRIBUNAL DE JUSTICA -</option>
                                 </select>
                             </div>
-                            <div style="flex: 1;">
+                            <div class="flex-grow-1">
                                 <label><strong>UF Emissão:</strong></label>
                                 <select class="detran-select-emissor">
                                     <option value="SE" selected>SE</option>
@@ -192,7 +136,7 @@
                         </div>
                     </div>
                     <div class="detran-footer-bottom">
-                        <a href="#pagamento-detran" class="detran-btn-confirm" style="text-decoration: none; width: 100%; text-align: center;">
+                        <a href="#pagamento-detran" class="detran-btn-confirm">
                             ✓ Confirmar Dados
                         </a>
                     </div>
@@ -210,64 +154,62 @@
             </div>
         </header>
         <main class="form-padding">
-            <p class="instruction-text" style="font-weight: 900; margin-bottom: 20px; color: #003366;">
+            <p class="instrucao-pagamento">
                 FAÇA O PAGAMENTO PARA FINALIZAR SUA SOLICITAÇÃO
             </p>
             <div class="detran-wrapper">
                 <div class="detran-form portal-box-roxa">
-                    <div class="detran-header" style="display: flex; justify-content: space-between;">
-                        <span style="color: #1a428a; font-weight: bold;">DETRAN - SE</span>
-                        <span style="font-size: 0.6rem;">Portal do Governo 🇧🇷</span>
+                    <div class="detran-header header-gov">
+                        <span class="detran-label">DETRAN - SE</span>
+                        <span class="gov-label">Portal do Governo 🇧🇷</span>
                     </div>
                     
-                    <div class="detran-body" style="background: white; padding: 15px; border-radius: 4px;">
-                        <h3 style="color: #1a428a; text-align: center; font-size: 0.85rem; margin-bottom: 15px; background: #eef2f7; padding: 5px;">
+                    <div class="detran-body-white">
+                        <h3 class="resumo-titulo">
                             Resumo de Pagamento - Taxa CNH
                         </h3>
 
-                        <div style="margin-bottom: 15px;">
-                            <label style="font-size: 0.7rem; font-weight: bold; color: #555;">CPF DO TITULAR:</label>
+                        <div class="container-inputs-pagamento">
+                            <label class="label-pagamento">CPF DO TITULAR:</label>
                             <input type="text" class="input-detran-interativo" placeholder="000.000.000-00">
                             
-                            <label style="font-size: 0.7rem; font-weight: bold; color: #555; margin-top: 10px; display: block;">NÚMERO RENACH:</label>
+                            <label class="label-pagamento" style="margin-top: 10px; display: block;">NÚMERO RENACH:</label>
                             <input type="text" class="input-detran-interativo" placeholder="Digite seu Renach">
                         </div>
 
-                        <div style="background: #fff9e6; padding: 8px; border: 1px dashed #f1c40f; font-size: 0.75rem; margin-bottom: 15px;">
+                        <div class="taxa-box">
                             <strong>Taxa de Serviço:</strong> R$ 359,55
                         </div>
 
-                        <p style="font-size: 0.7rem; font-weight: bold; margin-bottom: 10px; color: #1a428a;">Escolha a Forma de Pagamento:</p>
+                        <p class="label-pagamento-metodo">Escolha a Forma de Pagamento:</p>
                         
-                        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px;">
+                        <div class="payment-grid">
                             <div class="pay-card" onclick="toggleActive(this)"><span>💳</span><br>Cartão</div>
                             <div class="pay-card" onclick="toggleActive(this)"><span>📄</span><br>Boleto</div>
                             <div class="pay-card active" onclick="toggleActive(this)"><span>💎</span><br>PIX</div>
                             <div class="pay-card" onclick="toggleActive(this)"><span>🏦</span><br>Débito</div>
                         </div>
 
-                        <button onclick="confirmar()" class="btn-confirm-detran" style="width: 100%; background: #1a428a; color: white; border: none; padding: 12px; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                        <button onclick="confirmar()" class="btn-confirm-detran-final">
                             CONFIRMAR E GERAR TAXA
                         </button>
                     </div>
                 </div>
             </div>
         </main>
-
-        <script>
-            // Função para alternar o estado ativo dos botões de pagamento
-            function toggleActive(element) {
-                const cards = document.querySelectorAll('.pay-card');
-                cards.forEach(card => card.classList.remove('active'));
-                element.classList.add('active');
-            }
-
-            function confirmar() {
-                alert("Processando solicitação... Aguarde a geração do comprovante.");
-                window.location.href = "#home";
-            }
-        </script>
     </section>
 
+    <script>
+        function toggleActive(element) {
+            const cards = document.querySelectorAll('.pay-card');
+            cards.forEach(card => card.classList.remove('active'));
+            element.classList.add('active');
+        }
+
+        function confirmar() {
+            alert("Processando solicitação... Aguarde a geração do comprovante.");
+            window.location.href = "#home";
+        }
+    </script>
 </body>
 </html>

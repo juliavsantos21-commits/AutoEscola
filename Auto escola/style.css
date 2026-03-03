@@ -302,3 +302,332 @@ section {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+/* Reset e Fundo */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #d1a52b; /* Amarelo escuro do layout */
+}
+
+/* Header Azul */
+.barra-servicos {
+    background-color: #003366;
+    color: white;
+    padding: 15px 50px;
+    border-bottom: 5px solid #002244;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icone-carro-branco {
+    width: 60px;
+    height: 60px;
+    background: white url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    background-size: 70%;
+    border-radius: 12px;
+}
+
+.texto-cabecalho h1 { margin: 0; font-size: 24px; letter-spacing: 1px; }
+.texto-cabecalho p { margin: 0; color: #f1c40f; font-weight: bold; }
+
+/* Área de Conteúdo */
+.area-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.alerta-instrucao {
+    color: #003366;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Card Branco Estilo Detran */
+.card-detran {
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.topo-detran {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #004499;
+}
+
+.logo-detran { height: 35px; }
+
+.titulo-pagamento {
+    text-align: center;
+    color: #004499;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.conteudo-form { padding: 0 40px 40px; }
+
+/* Campos e Fieldsets */
+.secao-dados {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.campo-falso {
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    padding: 3px 10px;
+    margin-left: 5px;
+}
+
+.captcha {
+    background: #eee;
+    padding: 5px;
+    border: 1px dashed #666;
+    font-weight: bold;
+}
+
+.azul-destaque { color: #004499; font-weight: bold; }
+
+/* Grid de Pagamento */
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.item-pagamento {
+    border: 1px solid #ccc;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Lógica de Seleção Sem JavaScript */
+input[type="radio"]:checked + .item-pagamento {
+    border: 2px solid #004499;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-confirmar {
+    display: block;
+    width: 250px;
+    margin: 20px auto 0;
+    padding: 12px;
+    background: #004499;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover { background: #002266; }
+/* ESTILIZAÇÃO DA SEÇÃO DE PAGAMENTO (ID: pagamento-section) */
+
+#pagamento-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha ao topo para dar espaço ao header */
+    padding-top: 120px; /* Espaço para não bater no header-internal */
+    background-color: #d4a031;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Ajuste da área principal para conter o card */
+#pagamento-section .area-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Alerta de instrução em destaque */
+#pagamento-section .alerta-instrucao {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* O Card Branco do Detran */
+.card-detran {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+}
+
+.topo-detran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 2px solid #004499;
+    background-color: #f9f9f9;
+}
+
+.logo-detran {
+    height: 40px;
+}
+
+.gov-br {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.titulo-pagamento {
+    color: #004499;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Conteúdo interno do formulário */
+.conteudo-form {
+    padding: 0 30px 30px;
+}
+
+.secao-dados {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.secao-dados legend {
+    color: #004499;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 0 10px;
+}
+
+/* Ajuste dos inputs dentro do card (sobrescrevendo o estilo universal transparente) */
+.secao-dados .input-group label {
+    color: #333; /* Texto escuro no fundo branco */
+}
+
+.secao-dados .input-group input {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #003366;
+}
+
+.linha-dado {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.captcha {
+    background: #e0e0e0;
+    padding: 4px 10px;
+    border: 1px dashed #999;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-captcha {
+    width: 120px !important;
+    display: inline-block !important;
+}
+
+.azul-destaque {
+    color: #004499;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Container de Opções de Pagamento */
+.pagamento-container h3 {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em telas menores */
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .grid-pagamento {
+        grid-template-columns: repeat(4, 1fr); /* 4 por linha em telas maiores */
+    }
+}
+
+.item-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: all 0.2s ease;
+    background: #fdfdfd;
+}
+
+.item-pagamento:hover {
+    border-color: #d4a031;
+}
+
+/* Lógica de check do rádio */
+input[type="radio"]:checked + .item-pagamento {
+    border-color: #004499;
+    background-color: #eef5ff;
+    transform: scale(1.05);
+}
+
+/* Botão de confirmação final */
+.btn-confirmar {
+    width: 100%;
+    background-color: #004499;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #002d66;
+}

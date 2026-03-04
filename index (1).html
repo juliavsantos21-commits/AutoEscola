@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Escola Sergipana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home">
+        <div class="icon-box">
+            <div class="icon-car"></div>
+        </div>
+        
+        <div class="image-section"></div>
+        
+        <div class="content-section">
+            <h1>AUTO ESCOLA<br>SERGIPANA</h1>
+            <div class="subtitle">APRESENTAÇÃO DE SERVIÇOS</div>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <a href="#cadastro" class="btn-universal">CADASTRE-SE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <h1>AUTO ESCOLA<br>SERGIPANA</h1>
+        </header>
+
+        <main class="form-padding">
+            <form action="#servicos">
+                <div class="input-group">
+                    <label>NOME COMPLETO</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>CPF</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>TELEFONE</label>
+                    <input type="tel" required>
+                </div>
+                <div class="input-group">
+                    <label>ENDEREÇO</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-group">
+                    <label>EMAIL</label>
+                    <input type="email" required>
+                </div>
+                <div style="display: flex; justify-content: flex-end; margin-top: 15px;">
+                    <button type="submit" class="btn-universal" style="display: flex; align-items: center;">
+                        <span class="check-circle">✓</span> CONFIRMAR
+                    </button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <section id="servicos">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>CURSOS PROFISSIONALIZANTES E CNH</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: center; height: 100%;">
+            <a href="#inscricao" class="btn-servico">PRIMEIRA HABILITAÇÃO</a>
+            <a href="#renovacao" class="btn-servico">RENOVAÇÃO DE CNH</a>
+            <a href="#categorias" class="btn-servico">ADAPTAÇÃO PARA DEFICIENTES</a>
+            <a href="#agendamento" class="btn-servico">AGENDAMENTO</a>
+            <a href="#acompanhamento" class="btn-servico">ACOMPANHAMENTO DE PROCESSO</a>
+        </main>
+    </section>
+
+    <section id="categorias">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>CURSOS PROFISSIONALIZANTES E CNH</p>
+            </div>
+        </header>
+
+        <main class="form-padding">
+            <p style="color: #003366; font-weight: bold; text-align: left; margin-bottom: 10px; width: 100%;">CATEGORIAS:</p>
+            <a href="#home" class="btn-servico">A (MOTO)</a>
+            <a href="#home" class="btn-servico">B (CARRO)</a>
+            <a href="#home" class="btn-servico">AB (AMBAS AS CATEGORIAS)</a>
+            <a href="#home" class="btn-servico">C (CAMINHÕES)</a>
+            <a href="#home" class="btn-servico">D (ÔNIBUS)</a>
+            <a href="#home" class="btn-servico">E (CARRETA)</a>
+        </main>
+    </section>
+
+    <section id="inscricao">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>INSCRIÇÃO PARA CNH</p>
+            </div>
+        </header>
+
+        <main class="form-padding">
+            <form action="#home">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label>CPF:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>NÚMERO DO DOCUMENTO:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>TIPO DE DOCUMENTO:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>UF EMISSÃO:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>ORGÃO EMISSOR:</label>
+                        <input type="text" required>
+                    </div>
+                    <div style="display: flex; align-items: flex-end;">
+                        <button type="submit" class="btn-grid-confirm">
+                            <span class="check-circle">✓</span> CONFIRMAR
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <section id="agendamento">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>AGENDAMENTO</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: center;">
+            <form action="#acompanhamento">
+                <div class="form-grid" style="margin-top: 40px;">
+                    <div class="input-group">
+                        <label>NÚMERO DO CPF</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <label>TIPO DE AGENDAMENTO</label>
+                        <select required>
+                            <option value="" disabled selected></option>
+                            <option value="Processo de Habilitação">PROCESSO DE HABILITAÇÃO</option>
+                            <option value="Coleta Biometria">COLETA DOS DADOS BIOMÉTRICOS - CAV</option>
+                            <option value="Recebimento Veiculo">RECEBIMENTO DE DOCUMENTO DE VEÍCULO</option>
+                            <option value="Recebimento Habilitacao">RECEBIMENTO DE DOCUMENTO DE HABILITAÇÃO</option>
+                            <option value="Processo Veiculos">PROCESSO DE VEÍCULOS</option>
+                            <option value="Vistoria Detran">VISTORIA EM UMA UNIDADE DO DETRAN/SE</option>
+                            <option value="Vistoria Privada">VISTORIA EM UMA EMPRESA PRIVADA</option>
+                            <option value="Avaliacao Psicologica">AVALIAÇÃO PSICOLÓGICA</option>
+                            <option value="Exame Medico">EXAME MÉDICO</option>
+                            <option value="Exame Teorico">EXAME TEÓRICO</option>
+                            <option value="Exame Pratico">EXAME PRÁTICO</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: flex-end; margin-top: 30px;">
+                    <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                        <span class="check-circle">✓</span> CONFIRMAR
+                    </button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <section id="acompanhamento">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text" style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="margin-top: 5px;">NOSSOS SERVIÇOS</h1>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: center;">
+            <p class="instruction-text">
+                Acompanhe seu processo no Detran através do menu <strong>"Habilitação"</strong>.
+            </p>
+            
+            <div class="menu-detran">
+                <div class="menu-detran-item">
+                    <span style="font-size: 1.5rem;">🚘</span><br>Veículo
+                </div>
+                <div class="menu-detran-item highlight">
+                    <span style="font-size: 1.5rem;">🪪</span><br>Habilitação
+                </div>
+                <div class="menu-detran-item">
+                    <span style="font-size: 1.5rem;">🧾</span><br>Infração
+                </div>
+            </div>
+
+            <p class="instruction-text" style="font-size: 0.8rem; text-align: justify; text-align-last: center;">
+                Na página seguinte escolha a opção <strong>"Acompanhamento de serviço em andamento (alterações, cancelamento, emissão de taxa/LADV, agendamento de provas/exames, desistências...)"</strong> e preencha seu CPF e senha.
+            </p>
+
+            <form action="#home">
+                <div style="display: flex; justify-content: flex-end; margin-top: 15px;">
+                    <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                        <span class="check-circle">✓</span> CONFIRMAR
+                    </button>
+                </div>
+            </form>
+        </main>
+    </section>
+
+    <section id="renovacao">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>RENOVAÇÃO DE CNH:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: flex-start; padding-top: 0;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 8px;">FAÇA A SOLICITAÇÃO PELO SITE DO DETRAN/SE</p>
+            <p style="color: #003366; font-weight: 900; margin-bottom: 25px;">CLIQUE EM HABILITAÇÃO</p>
+
+            <div class="portal-box">
+                <div class="portal-header">PORTAL DE SERVIÇOS DO DETRAN</div>
+                <div class="portal-menu">
+                    <div class="portal-item"><span>🚘</span> Veículo</div>
+                    <a href="#renovacao-passo2" style="text-decoration: none; display: block;">
+                        <div class="portal-item highlight-arrow"><span>🪪</span> Habilitação</div>
+                    </a>
+                    <div class="portal-item"><span>📄</span> Defesa/Recurso</div>
+                    <div class="portal-item"><span>🧾</span> Infração</div>
+                    <div class="portal-item"><span>📅</span> Agendamento</div>
+                    <div class="portal-item"><span>🚚</span> CNH Caminhoneiro</div>
+                </div>
+            </div>
+            
+            <form action="#home" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+    </section>
+
+    <section id="renovacao-passo2">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>RENOVAÇÃO DE CNH:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: flex-start; padding-top: 0;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 35px;">CLIQUE EM RENOVAÇÃO DA CARTEIRA NACIONAL DE HABILITAÇÃO</p>
+
+            <div class="portal-box" style="padding: 40px 30px; margin-bottom: 20px;">
+                <a href="#renovacao-passo3" style="text-decoration: none; color: inherit; display: block; position: relative;" class="arrow-left-card">
+                    <div class="renovacao-card">
+                        <p style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #444; margin-bottom: 10px; font-weight: normal;">
+                            Renovação da carteira nacional de<br>habilitação - CNH
+                        </p>
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(to right, #4285F4 33%, #34A853 33%, #34A853 66%, #FBBC05 66%); border-radius: 0 0 4px 4px;"></div>
+                    </div>
+                </a>
+            </div>
+            
+            <form action="#renovacao" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+    </section>
+
+    <section id="renovacao-passo3">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>RENOVAÇÃO DE CNH:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: center; padding-left: 50px; padding-right: 50px;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 25px;">PREENCHA OS DADOS SEGUINTES:</p>
+
+            <div class="detran-wrapper">
+                
+                <div class="detran-form">
+                    <div class="detran-header">IDENTIFICAÇÃO DO CONDUTOR, PERMISSIONÁRIO OU CANDIDATO</div>
+                    
+                    <div class="detran-body">
+                        <div class="detran-row">
+                            <label><strong>CPF :</strong></label>
+                            <input type="text" placeholder="123.456.789-00" style="width: 110px;">
+                            <span style="color: red;">*</span>
+                        </div>
+                        
+                        <div class="detran-row">
+                            <label><strong>Você possui o documento de identidade no <span style="color: #4285F4;">modelo novo</span>, cujo número do mesmo é o seu CPF?</strong></label>
+                            <label>Sim<input type="radio" name="modelo_novo" style="margin-left: 2px; margin-right: 5px;"></label>
+                            <label>Não<input type="radio" name="modelo_novo" style="margin-left: 2px;"></label>
+                            <span style="color: red;">*</span>
+                        </div>
+                        
+                        <div class="detran-cols">
+                            <div class="detran-col-left">
+                                <div class="detran-field">
+                                    <label><strong>Tipo de Documento:</strong></label>
+                                    <select style="width: 140px; color: #aaa;"><option>IDENTIDADE</option>
+                                    <option value="width: 140px; color: #aaa;">CNH</option></select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                                <div class="detran-field">
+                                    <label><strong>Órgão Emissor:</strong></label>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="SNJ">SNJ - SECRETARIA NACIONAL DA JUSTIÇA</option>
+                                        <option value="SPSP">SPSP - SEC POLICIA SEG PUBLICA</option>
+                                        <option value="SPTC">SPTC - SUPERINT. DE POLICIA TEC-CIENTIFICA</option>
+                                        <option value="SRDPF">SRDPF - SUPERINT REG DEPTO DA POL FEDERAL</option>
+                                        <option value="SRF">SRF - SUPERINT. RECEITA FEDERAL</option>
+                                        <option value="SRTE">SRTE - SUP REGIONAL DO TRABALHO E EMPREGO</option>
+                                        <option value="SSDC">SSDC - SEC. DE SEG. DEFESA E CIDADANIA</option>
+                                        <option value="SSDS">SSDS - SEC DA SEGURANCA E DA DEFESA SOCIAL</option>
+                                        <option value="SSI">SSI - SEC DE SEGURANCA E INFORMACOES</option>
+                                        <option value="SSIPT">SSIPT - SECRETARIA SEG INT PUBLICA</option>
+                                        <option value="SSP">SSP - SECRETARIA DE SEGURANCA PUBLICA</option>
+                                        <option value="SSPCGP">SSPCGP - SEC DA SEG PUBLICA COOD G PERICIAS</option>
+                                        <option value="SSPDC">SSPDC - SSP E DEFESA DO CIDADAO</option>
+                                        <option value="SSPDS">SSPDS - SEC SEG PUBLICA E DEFESA SOCIAL</option>
+                                        <option value="SSPO">SSPO - DE SEG. PUBLICA DE ÓRGÃOS</option>
+                                        <option value="TJ">TJ - TRIBUNAL DE JUSTICA</option>
+                                        <option value="TRE">TRE - TRIBUNAL REGIONAL ELEITORAL</option>
+                                        <option value="TRT">TRT - TRIBUNAL REGIONAL DO TRABALHO</option>
+                                        <option value="TSE">TSE - TRIBUNAL SUPERIOR ELEITORAL</option>
+                                        <option value="TST">TST - TRIBUNAL SUPERIOR DO TRABALHO</option>
+                                        <option value="MREX">MREX - MINISTERIO DAS RELACOES EXTERIORES</option>
+                                    </select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detran-col-right">
+                                <div class="detran-field" style="justify-content: flex-start;">
+                                    <label><strong>Número do Documento:</strong></label>
+                                    <input type="text" placeholder="123.456.789" style="width: 100px;">
+                                    <label style="margin-left: 10px;"><strong>Dígito:</strong></label>
+                                    <input type="text" placeholder="00" style="width: 30px;">
+                                </div>
+                                <div class="detran-field" style="justify-content: flex-start;">
+                                    <label><strong>UF Emissão:</strong></label>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AM">AM</option>
+                                        <option value="AP">AP</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MG">MG</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MT">MT</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="PR">PR</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="RS">RS</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SE">SE</option>
+                                        <option value="SP">SP</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detran-footer-top">    
+                    </div>
+                    <div class="detran-footer-bottom">
+                        <form action="#home" style="margin: 0; width: auto;">
+                            <button type="submit" class="detran-btn-confirm">
+                                <span style="font-size: 0.8rem;">✓</span> Confirmar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="#renovacao-passo2" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+    </section>
+    <body>
+
+        <section id="pagamento-section">
+            <header class="header-internal">
+                <div class="icon-box-static">
+                    <div class="icon-car"></div>
+                </div>
+                <div class="header-text">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                    <p>RENOVAÇÃO DE CNH:</p>
+                </div>
+            </header>    
+    
+        <main class="area-principal">
+            <div class="alerta-instrucao">
+                FAÇA O PAGAMENTO, E ESPERE O RESULTADO DA SOLICITAÇÃO PELO SITE DO DETRAN
+            </div>
+    
+            <div class="card-detran">
+                <div class="topo-detran">
+                    <img src="images/unnamed.png" alt="Detran" class="logo-detran">
+                    <div class="gov-br">Portal do Governo</div>
+                </div>
+    
+                <h2 class="titulo-pagamento">Pagamento da 2ª Via da CNH</h2>
+    
+                <div class="conteudo-form">
+                    <fieldset class="secao-dados">
+                        <legend>Dados do Solicitante</legend>
+                        <div class="input-group">
+                            <label>CPF:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>RENACH:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Data de Nascimento:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="linha-dado">
+                            <strong>Código de Verificação:</strong> 
+                            <span class="captcha">7V8BK</span>
+                            <input type="text" placeholder="Digite o código" class="input-captcha">
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="secao-dados">
+                        <legend>Detalhes da Solicitação</legend>
+                        <p><strong>Serviço:</strong> 2ª Via da CNH</p>
+                        <p><strong>Motivo:</strong> Perda do Documento</p>
+                        <p><strong>Taxa:</strong> <span class="azul-destaque">R$ 359,55</span></p>
+                        <p><strong>Prazo de Entrega:</strong> 7 a 10 dias úteis</p>
+                    </fieldset>
+    
+                    <div class="pagamento-container">
+                        <h3>Escolha a Forma de Pagamento</h3>
+                        <div class="grid-pagamento">
+                            <input type="radio" name="metodo" id="card" hidden>
+                            <label for="card" class="item-pagamento">💳<br>Pagar com Cartão</label>
+    
+                            <input type="radio" name="metodo" id="boleto" hidden>
+                            <label for="boleto" class="item-pagamento">📋<br>Gerar Boleto</label>
+    
+                            <input type="radio" name="metodo" id="pix" hidden checked>
+                            <label for="pix" class="item-pagamento">✨<br>Pagar com PIX</label>
+    
+                            <input type="radio" name="metodo" id="debito" hidden>
+                            <label for="debito" class="item-pagamento">🏦<br>Débito em Conta</label>
+                        </div>
+                    </div>
+    
+                    <button class="btn-confirmar">Confirmar Pagamento</button>
+                </div>
+            </div>
+        </main>
+            </form>
+        </main>
+    </section>
+    <body>
+        <section id="renovacao">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>ADAPTAÇÃO PARA DEFICIENTES:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: flex-start; padding-top: 0;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 8px;">FAÇA A SOLICITAÇÃO PELO SITE DO DETRAN/SE</p>
+            <p style="color: #003366; font-weight: 900; margin-bottom: 25px;">CLIQUE EM HABILITAÇÃO</p>
+
+            <div class="portal-box">
+                <div class="portal-header">PORTAL DE SERVIÇOS DO DETRAN</div>
+                <div class="portal-menu">
+                    <div class="portal-item"><span>🚘</span> Veículo</div>
+                    <a href="#renovacao-passo2" style="text-decoration: none; display: block;">
+                        <div class="portal-item highlight-arrow"><span>🪪</span> Habilitação</div>
+                    </a>
+                    <div class="portal-item"><span>📄</span> Defesa/Recurso</div>
+                    <div class="portal-item"><span>🧾</span> Infração</div>
+                    <div class="portal-item"><span>📅</span> Agendamento</div>
+                    <div class="portal-item"><span>🚚</span> CNH Caminhoneiro</div>
+                </div>
+            </div>
+            
+            <form action="#home" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+    </section>
+
+            <section id="renovacao-passo2">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>ADAPTAÇÃO PARA DEFICIENTES:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: flex-start; padding-top: 0;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 35px;">CLIQUE EM PRIMEIRA HABILITAÇÃO(PERMISSÃO PARA DIRIGIR)</p>
+
+            <div class="portal-box" style="padding: 40px 30px; margin-bottom: 20px;">
+                <a href="#renovacao-passo3" style="text-decoration: none; color: inherit; display: block; position: relative;" class="arrow-left-card">
+                    <div class="renovacao-card">
+                        <p style="font-family: Arial, sans-serif; font-size: 1.1rem; color: #444; margin-bottom: 10px; font-weight: normal;">
+                            Primeira habilitação<br>(Permissão para dirigir)- PpD
+                        </p>
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(to right, #4285F4 33%, #34A853 33%, #34A853 66%, #FBBC05 66%); border-radius: 0 0 4px 4px;"></div>
+                    </div>
+                </a>
+            </div>
+            
+            <form action="#renovacao" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+</button>
+            </form>
+        </main>
+    </section>
+
+    <section id="renovacao-passo3">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p>ADAPTAÇÃO PARA DEFICIENTES:</p>
+            </div>
+        </header>
+
+        <main class="form-padding" style="justify-content: center; padding-left: 50px; padding-right: 50px;">
+            <p style="color: #003366; font-weight: 900; margin-bottom: 25px;">PREENCHA OS DADOS SEGUINTES:</p>
+
+            <div class="detran-wrapper">
+                
+                <div class="detran-form">
+                    <div class="detran-header">IDENTIFICAÇÃO DO CONDUTOR, PERMISSIONÁRIO OU CANDIDATO</div>
+                    
+                    <div class="detran-body">
+                        <div class="detran-row">
+                            <label><strong>CPF :</strong></label>
+                            <input type="text" placeholder="123.456.789-00" style="width: 110px;">
+                            <span style="color: red;">*</span>
+                        </div>
+                        
+                        <div class="detran-row">
+                            <label><strong>Você possui o documento de identidade no <span style="color: #4285F4;">modelo novo</span>, cujo número do mesmo é o seu CPF?</strong></label>
+                            <label>Sim<input type="radio" name="modelo_novo" style="margin-left: 2px; margin-right: 5px;"></label>
+                            <label>Não<input type="radio" name="modelo_novo" style="margin-left: 2px;"></label>
+                            <span style="color: red;">*</span>
+                        </div>
+                        
+                        <div class="detran-cols">
+                            <div class="detran-col-left">
+                                <div class="detran-field">
+                                    <label><strong>Tipo de Documento:</strong></label>
+                                    <select style="width: 140px; color: #aaa;"><option>IDENTIDADE</option>
+                                    <option value="width: 140px; color: #aaa;">CNH</option></select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                                <div class="detran-field">
+                                    <label><strong>Órgão Emissor:</strong></label>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="SNJ">SNJ - SECRETARIA NACIONAL DA JUSTIÇA</option>
+                                        <option value="SPSP">SPSP - SEC POLICIA SEG PUBLICA</option>
+                                        <option value="SPTC">SPTC - SUPERINT. DE POLICIA TEC-CIENTIFICA</option>
+                                        <option value="SRDPF">SRDPF - SUPERINT REG DEPTO DA POL FEDERAL</option>
+                                        <option value="SRF">SRF - SUPERINT. RECEITA FEDERAL</option>
+                                        <option value="SRTE">SRTE - SUP REGIONAL DO TRABALHO E EMPREGO</option>
+                                        <option value="SSDC">SSDC - SEC. DE SEG. DEFESA E CIDADANIA</option>
+                                        <option value="SSDS">SSDS - SEC DA SEGURANCA E DA DEFESA SOCIAL</option>
+                                        <option value="SSI">SSI - SEC DE SEGURANCA E INFORMACOES</option>
+                                        <option value="SSIPT">SSIPT - SECRETARIA SEG INT PUBLICA</option>
+                                        <option value="SSP">SSP - SECRETARIA DE SEGURANCA PUBLICA</option>
+                                        <option value="SSPCGP">SSPCGP - SEC DA SEG PUBLICA COOD G PERICIAS</option>
+                                        <option value="SSPDC">SSPDC - SSP E DEFESA DO CIDADAO</option>
+                                        <option value="SSPDS">SSPDS - SEC SEG PUBLICA E DEFESA SOCIAL</option>
+                                        <option value="SSPO">SSPO - DE SEG. PUBLICA DE ÓRGÃOS</option>
+                                        <option value="TJ">TJ - TRIBUNAL DE JUSTICA</option>
+                                        <option value="TRE">TRE - TRIBUNAL REGIONAL ELEITORAL</option>
+                                        <option value="TRT">TRT - TRIBUNAL REGIONAL DO TRABALHO</option>
+                                        <option value="TSE">TSE - TRIBUNAL SUPERIOR ELEITORAL</option>
+                                        <option value="TST">TST - TRIBUNAL SUPERIOR DO TRABALHO</option>
+                                        <option value="MREX">MREX - MINISTERIO DAS RELACOES EXTERIORES</option>
+                                    </select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detran-col-right">
+                                <div class="detran-field" style="justify-content: flex-start;">
+                                    <label><strong>Número do Documento:</strong></label>
+                                    <input type="text" placeholder="123.456.789" style="width: 100px;">
+                                    <label style="margin-left: 10px;"><strong>Dígito:</strong></label>
+                                    <input type="text" placeholder="00" style="width: 30px;">
+                                </div>
+                                <div class="detran-field" style="justify-content: flex-start;">
+                                    <label><strong>UF Emissão:</strong></label>
+                                    <select required>
+                                        <option value="" disabled selected></option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AM">AM</option>
+                                        <option value="AP">AP</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MG">MG</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MT">MT</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="PR">PR</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="RS">RS</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SE">SE</option>
+                                        <option value="SP">SP</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                    <span style="color: red;">*</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detran-footer-top">    
+                    </div>
+                    <div class="detran-footer-bottom">
+                        <form action="#home" style="margin: 0; width: auto;">
+                            <button type="submit" class="detran-btn-confirm">
+                                <span style="font-size: 0.8rem;">✓</span> Confirmar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="#renovacao-passo2" style="width: 100%; display: flex; justify-content: flex-end; margin-top: 15px;">
+                <button type="submit" class="btn-grid-confirm" style="width: auto; padding: 10px 40px;">
+                    <span class="check-circle">✓</span> VOLTAR
+                </button>
+            </form>
+        </main>
+    </section>
+    <body>
+        </button>
+            </form>
+        </main>
+    </section>
+    <body>
+
+        <section id="pagamento-section">
+            <header class="header-internal">
+                <div class="icon-box-static">
+                    <div class="icon-car"></div>
+                </div>
+                <div class="header-text">
+                    <h1>NOSSOS SERVIÇOS</h1>
+                    <p>ADAPTAÇÃO PARA DEFICIENTES:</p>
+                </div>
+            </header>    
+    
+        <main class="area-principal">
+            <div class="alerta-instrucao">
+                FAÇA O PAGAMENTO, E ESPERE O RESULTADO DA SOLICITAÇÃO PELO SITE DO DETRAN
+            </div>
+    
+            <div class="card-detran">
+                <div class="topo-detran">
+                    <img src="images/unnamed.png" alt="Detran" class="logo-detran">
+                    <div class="gov-br">Portal do Governo</div>
+                </div>
+    
+                <h2 class="titulo-pagamento">Pagamento de CNH para pessoas com deficiência(PCD)</h2>
+    
+                <div class="conteudo-form">
+                    <fieldset class="secao-dados">
+                        <legend>Dados do Solicitante</legend>
+                        <div class="input-group">
+                            <label>CPF:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>RENACH:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Data de Nascimento:</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="linha-dado">
+                            <strong>Código de Verificação:</strong> 
+                            <span class="captcha">7V8BK</span>
+                            <input type="text" placeholder="Digite o código" class="input-captcha">
+                        </div>
+                    </fieldset>
+    
+                    <fieldset class="secao-dados">
+                        <legend>Detalhes da Solicitação</legend>
+                        <p><strong>Serviço:</strong> CNH Pcd</p>
+                        <p><strong>Categoria:</strong> inclusão ou adaptação PCD</p>
+                        <p><strong>Taxa:</strong> <span class="azul-destaque">R$ 2.500</span></p>
+                        <p><strong>Prazo de Entrega:</strong> 10 a 15 dias úteis</p>
+                    </fieldset>
+    
+                    <div class="pagamento-container">
+                        <h3>Escolha a Forma de Pagamento</h3>
+                        <div class="grid-pagamento">
+                            <input type="radio" name="metodo" id="card" hidden>
+                            <label for="card" class="item-pagamento">💳<br>Pagar com Cartão</label>
+    
+                            <input type="radio" name="metodo" id="boleto" hidden>
+                            <label for="boleto" class="item-pagamento">📋<br>Gerar Boleto</label>
+    
+                            <input type="radio" name="metodo" id="pix" hidden checked>
+                            <label for="pix" class="item-pagamento">✨<br>Pagar com PIX</label>
+    
+                            <input type="radio" name="metodo" id="debito" hidden>
+                            <label for="debito" class="item-pagamento">🏦<br>Débito em Conta</label>
+                        </div>
+                    </div>
+    
+                    <button class="btn-confirmar">Confirmar Pagamento</button>
+                </div>
+            </div>
+        </main>
+            </form>
+        </main>
+    </section>
+    </body>
+                
+
+                

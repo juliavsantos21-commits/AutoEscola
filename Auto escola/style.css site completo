@@ -1,0 +1,681 @@
+/* CONFIGURAÇÕES GERAIS */
+html {
+scroll-behavior: smooth;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+body {
+background-color: #f4f4f4;
+overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* ESTRUTURA DE SEÇÃO (TELA CHEIA) */
+section {
+width: 100%;
+height: 100vh;
+background-color: #d4a031;
+display: flex; 
+/* Ativa o Flexbox */ flex-direction: column;
+/* Alinha os itens em pé */
+justify-content: center; 
+/* Centraliza no meio (vertical) */
+align-items: center; 
+ /* Centraliza no meio (horizontal) */position: relative;
+overflow: hidden;
+border-bottom: 40px solid #003366;
+margin: 0; 
+padding: 0;
+}
+
+/* TELA 1: BANNER COM A ALUNA (IMAGEM ADICIONADA) */
+.image-section {
+width: 55%;
+height: 100%; 
+background-image: url('aluna.jpg');
+background-size: cover;
+background-position: center;
+position: relative;
+z-index: 1;
+}
+
+.image-section::after {
+content: "";
+position: absolute;
+top: 0;
+right: -100px;
+width: 200px;
+height: 100%;
+background-color: #d4a031;
+border-radius: 50% 0 0 50%;
+z-index: 2;
+}
+
+/* ÁREA DO TEXTO DA HOME */
+.content-section {
+width: 100%; /* Ocupa a largura total para poder centralizar no meio da tela */
+max-width: 900px; /* Limita para o conteúdo não esticar demais em telas ultra-wide */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 3;
+text-align: center; /* Garante que o texto dentro também centralize */
+}
+
+.content-section h1 {
+font-size: 2.2rem; 
+line-height: 1.1;
+text-align: center;
+color: white;
+text-transform: uppercase;
+/*margin-bottom: 10px;*/
+}
+
+.subtitle {
+background-color: rgba(255, 255, 255, 0.2);
+color: #003366;
+padding: 10px 15px;
+border-radius: 8px;
+font-size: 0.9rem; 
+font-weight: bold;
+text-align: center;
+margin-bottom: 25px;
+margin-top: 10px; 
+width: 100%;
+max-width: 300px; 
+}
+
+/* CABEÇALHOS INTERNOS */
+.header-internal {
+display: flex;
+padding: 20px 40px;
+align-items: flex-start;
+width: 100%;
+}
+
+.icon-box-static {
+background-color: white;
+width: 80px;
+height: 100px;
+border-radius: 0 0 15px 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+}
+
+.header-internal h1 { 
+font-size: 2rem; 
+color: white; 
+text-transform: uppercase; 
+}
+.header-text p { 
+color: #003366; 
+font-size: 0.8rem; 
+font-weight: bold; 
+text-transform: uppercase;
+}
+
+/* COMPONENTES TRANSLÚCIDOS E FORMULÁRIOS */
+.form-padding {
+padding: 20px 100px;
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+max-width: 1200px; 
+margin: 0 auto; 
+}
+
+form {
+width: 100%;
+}
+
+.input-group { margin-bottom: 10px; text-align: left; width: 100%; }
+.input-group label { color: white; font-size: 0.8rem; display: block; margin-bottom: 4px; }
+.input-group input,
+.input-group select {
+width: 100%;
+padding: 10px;
+border-radius: 8px;
+border: none;
+background: rgba(255,255,255,0.4);
+font-weight: bold;
+color: #003366;
+outline: none;
+}
+.input-group select option { background-color: #f4f4f4; color: #003366; font-weight: bold; }
+
+.form-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15px 30px;
+text-align: left;
+margin-top: 20px;
+width: 100%;
+}
+.form-grid .input-group label { color: #003366; font-weight: 900; }
+
+.btn-grid-confirm {
+background-color: rgba(255, 255, 255, 0.5); 
+color: #003366;
+padding: 10px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: 900;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+display: flex;
+lign-items: center;
+justify-content: center;
+width: 100%;
+margin-top: 20px; 
+}
+.btn-grid-confirm:hover { background-color: rgba(255, 255, 255, 0.7); }
+
+.btn-servico {
+display: block;
+width: 100%;
+background: rgba(255,255,255,0.4);
+color: #003366;
+padding: 15px;
+margin-bottom: 10px;
+text-decoration: none;
+border-radius: 8px;
+font-weight: 900;
+transition: 0.3s;
+text-align: center;
+}
+.btn-servico:hover { background: rgba(255,255,255,0.6); }
+
+.btn-universal {
+background-color: #e5c687;
+color: #003366;
+padding: 15px 30px;
+border-radius: 30px;
+text-decoration: none;
+font-weight: 900;
+text-transform: uppercase;
+display: inline-block;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+.btn-universal:hover { background-color: #f0d8a8; transform: scale(1.05); }
+
+.check-circle {
+border: 2px solid #003366;
+border-radius: 50%;
+padding: 0 5px;
+margin-right: 8px;
+}
+
+/* ÍCONE CARRO FLUTUANTE */
+.icon-box {
+background-color: white;
+width: 80px;
+height: 100px;
+border-radius: 0 0 15px 15px;
+position: absolute;
+right: 50px;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 10;
+}
+.icon-car {
+width: 50px;
+height: 50px;
+background-color: #ffcc00;
+-webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+mask-size: contain;
+}
+
+/* CLASSES PARA A TELA DE ACOMPANHAMENTO */
+.instruction-text {
+color: #003366;
+font-size: 0.9rem;
+line-height: 1.4;
+text-align: center;
+margin: 15px 0;
+}
+
+.menu-detran {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 5px;
+margin: 10px 0;
+}
+
+.menu-detran-item {
+background-color: #4285F4; 
+color: white;
+width: 140px;
+padding: 8px;
+text-align: center;
+border-radius: 4px;
+font-size: 0.8rem;
+font-family: Arial, sans-serif;
+position: relative;
+border: 1px solid #3367D6;
+}
+
+.menu-detran-item.highlight::after {
+content: "↖"; 
+position: absolute;
+right: -45px;
+top: 5px;
+color: #ffea00; 
+font-size: 3rem;
+line-height: 1;
+transform: rotate(-10deg);
+}
+
+/* CLASSES PARA A TELA DE RENOVAÇÃO */
+.portal-box {
+background-color: rgba(255, 255, 255, 0.4);
+padding: 20px;
+border-radius: 8px;
+width: 100%;
+max-width: 450px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+.portal-header {
+background-color: white;
+color: #555;
+padding: 10px;
+text-align: center;
+font-family: Arial, sans-serif;
+font-size: 0.9rem;
+margin-bottom: 10px;
+}
+
+.portal-menu {
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 100%;
+}
+
+.portal-item {
+background-color: #1a428a;
+color: white;
+padding: 10px;
+border-radius: 4px;
+font-family: Arial, sans-serif;
+font-size: 0.8rem;
+text-align: left;
+position: relative;
+display: flex;
+align-items: center;
+gap: 8px;
+transition: 0.2s;
+}
+
+.portal-item:hover { background-color: #2b5cb8; }
+
+.portal-item.highlight-arrow::after {
+content: "↖"; 
+position: absolute;
+right: -60px;
+top: -5px;
+color: #ffea00; 
+font-size: 3.5rem;
+line-height: 1;
+transform: rotate(-45deg);
+-webkit-text-stroke: 2px black;
+}
+
+/* CLASSES PARA O PASSO 2 DA RENOVAÇÃO */
+.renovacao-card {
+background: white;
+padding: 40px 20px;
+border-radius: 4px;
+text-align: center;
+position: relative;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.renovacao-card:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.arrow-left-card::after {
+content: "↖"; 
+position: absolute;
+right: -75px;
+top: 50%;
+color: #ffea00; 
+font-size: 4rem;
+line-height: 1;
+transform: translateY(-50%) rotate(-45deg);
+-webkit-text-stroke: 2px black;
+pointer-events: none; 
+}
+
+/* NOVAS CLASSES PARA O PASSO 3 (FORMULÁRIO DETRAN) COM CENTRALIZAÇÃO */
+.detran-wrapper {
+background-color: rgba(255, 255, 255, 0.4);
+padding: 15px;
+border-radius: 8px;
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.detran-form {
+background-color: white;
+border: 1px solid #ddd;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.65rem;
+color: #333;
+text-align: left;
+width: 100%;
+}
+
+.detran-header {
+background-color: #f5f5f5;
+border-bottom: 1px solid #ddd;
+padding: 6px 10px;
+color: #777;
+text-transform: uppercase;
+}
+
+.detran-body {
+padding: 10px 15px;
+}
+
+/* Centraliza os campos das linhas únicas */
+.detran-row {
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+justify-content: center; 
+gap: 5px;
+}
+
+.detran-row input[type="text"],
+.detran-row select {
+border: 1px solid #a9a9a9;
+padding: 2px;
+font-size: 0.65rem;
+color: #333;
+}
+
+/* Centraliza as colunas na horizontal */
+.detran-cols {
+display: flex;
+justify-content: center;
+gap: 40px; 
+margin-top: 15px;
+}
+
+.detran-col-left, .detran-col-right {
+display: flex;
+flex-direction: column;
+gap: 8px;
+width: auto; 
+}
+
+.detran-field {
+display: flex;
+align-items: center;
+gap: 5px;
+justify-content: flex-end; 
+}
+
+/* Centraliza o texto do rodapé */
+.detran-footer-top {
+background-color: #f9f9f9;
+border-top: 1px solid #eee;
+border-bottom: 1px solid #eee;
+padding: 6px 10px;
+color: #888;
+text-align: center;
+}
+
+.detran-footer-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 8px 15px;
+background-color: white;
+}
+
+.wpp-icon {
+background-color: #25D366;
+color: white;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+text-decoration: none;
+font-weight: normal;
+}
+
+.detran-btn-confirm {
+background-color: #4285F4;
+color: white;
+order: 1px solid #3367d6;
+padding: 5px 15px;
+border-radius: 3px;
+font-size: 0.7rem;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 4px;
+}
+
+.detran-btn-confirm:hover {
+background-color: #3367d6;
+} 
+/* ESTILIZAÇÃO DA SEÇÃO DE PAGAMENTO (ID: pagamento-section) */
+
+#pagamento-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha ao topo para dar espaço ao header */
+    padding-top: 120px; /* Espaço para não bater no header-internal */
+    background-color: #d4a031;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Ajuste da área principal para conter o card */
+#pagamento-section .area-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Alerta de instrução em destaque */
+#pagamento-section .alerta-instrucao {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* O Card Branco do Detran */
+.card-detran {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+}
+
+.topo-detran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 2px solid #004499;
+    background-color: #f9f9f9;
+}
+
+.logo-detran {
+    height: 40px;
+}
+
+.gov-br {
+    font-weight: bold;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.titulo-pagamento {
+    color: #004499;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Conteúdo interno do formulário */
+.conteudo-form {
+    padding: 0 30px 30px;
+}
+
+.secao-dados {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.secao-dados legend {
+    color: #004499;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 0 10px;
+}
+
+/* Ajuste dos inputs dentro do card (sobrescrevendo o estilo universal transparente) */
+.secao-dados .input-group label {
+    color: #333; /* Texto escuro no fundo branco */
+}
+
+.secao-dados .input-group input {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #003366;
+}
+
+.linha-dado {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.captcha {
+    background: #e0e0e0;
+    padding: 4px 10px;
+    border: 1px dashed #999;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.input-captcha {
+    width: 120px !important;
+    display: inline-block !important;
+}
+
+.azul-destaque {
+    color: #004499;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Container de Opções de Pagamento */
+.pagamento-container h3 {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 por linha em telas menores */
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .grid-pagamento {
+        grid-template-columns: repeat(4, 1fr); /* 4 por linha em telas maiores */
+    }
+}
+
+.item-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: all 0.2s ease;
+    background: #fdfdfd;
+}
+
+.item-pagamento:hover {
+    border-color: #d4a031;
+}
+
+/* Lógica de check do rádio */
+input[type="radio"]:checked + .item-pagamento {
+    border-color: #004499;
+    background-color: #eef5ff;
+    transform: scale(1.05);
+}
+
+/* Botão de confirmação final */
+.btn-confirmar {
+    width: 100%;
+    background-color: #004499;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-confirmar:hover {
+    background-color: #002d66;
+}

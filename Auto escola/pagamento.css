@@ -1,0 +1,230 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO */
+#pagamento-section {
+    width: 100%; 
+    min-height: 100vh; 
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    position: relative;
+    border-bottom: 40px solid #003366;
+}
+
+/* NAVBAR NO TOPO */
+.header-internal { 
+    display: flex; 
+    padding: 20px 8%; 
+    align-items: flex-start; 
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon-box-static {
+    background-color: white; 
+    width: 90px; 
+    height: 120px;
+    border-radius: 0 0 20px 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    top: -20px;
+}
+
+.header-text h1 { 
+    font-size: 2.2rem; 
+    color: white; 
+    text-transform: uppercase; 
+    margin-left: 20px;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.icon-car {
+    width: 50px; height: 50px; background-color: #ffcc00;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+}
+
+/* ÁREA DO CONTEÚDO */
+.area-principal {
+    flex-grow: 1;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alerta-instrucao {
+    color: #003366; 
+    font-size: 1rem;
+    margin-bottom: 25px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* CAIXA TRANSLÚCIDA E CARD DETRAN */
+.detran-wrapper {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-detran {
+    background: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.topo-detran {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #004499;
+    background-color: #ffffff;
+}
+
+.logo-detran { height: 25px; font-weight: 900; font-size: 1.2rem; color: #004499; font-style: italic;} 
+
+.titulo-pagamento {
+    background-color: #eef5ff; 
+    color: #003366;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.conteudo-form { padding: 0 0 25px 0; }
+
+/* SEÇÕES DO FORMULÁRIO */
+.secao-dados {
+    border: none; 
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.secao-dados legend, .titulo-secao-pagamento {
+    background-color: #f9f9f9;
+    width: 100%;
+    color: #004499;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+/* ALINHAMENTO LATERAL DOS CAMPOS */
+.input-group-detran {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 0 20px;
+}
+
+.input-group-detran label {
+    width: 160px; 
+    font-size: 0.8rem;
+    color: #003366;
+    margin-bottom: 0;
+}
+
+.input-group-detran input {
+    width: 180px; 
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+.input-group-detran input:focus { border-color: #004499; }
+
+.linha-dado {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: #444;
+    padding: 0 20px;
+}
+
+.linha-dado strong {
+    width: 160px; 
+    color: #003366;
+    font-weight: normal;
+}
+
+.azul-destaque {
+    color: #333; 
+    font-weight: normal;
+}
+
+/* GRID PAGAMENTO - 4 COLUNAS */
+.pagamento-container { width: 100%; }
+
+.grid-pagamento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.item-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    transition: 0.2s;
+    background: #ffffff;
+    color: #333;
+    text-align: center;
+    gap: 5px;
+}
+
+input[type="radio"]:checked + .item-pagamento {
+    border-color: #004499;
+    background-color: #eef5ff;
+}
+
+/* BOTÃO CONFIRMAR */
+.btn-confirmar {
+    display: block;
+    margin: 25px auto 0 auto;
+    background-color: #3b5998; 
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-confirmar:hover { background-color: #2d4373; }

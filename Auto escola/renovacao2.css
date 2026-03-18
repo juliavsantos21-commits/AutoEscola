@@ -1,0 +1,205 @@
+/* 1. RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fdb927; /* Amarelo da imagem */
+    overflow-x: hidden;
+}
+
+/* 2. ESTRUTURA DA SEÇÃO (O CONTAINER PAI) */
+#renovacao {
+    width: 100%;
+    min-height: 100vh; /* Ocupa a tela toda, mas cresce se precisar */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 60px; /* Espaço para a barra azul no rodapé */
+}
+
+/* 3. CABEÇALHO (ÍCONE E TÍTULO) */
+.header-internal {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 40px;
+    width: 100%;
+    z-index: 10;
+}
+
+.icon-box-static {
+    background-color: #fff;
+    width: 80px;
+    height: 100px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-right: 25px;
+}
+
+.icon-car {
+    width: 60px;
+    height: 40px;
+    background-color: #fdb927;
+    /* Ícone de carro via máscara para aceitar a cor acima */
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+.header-text {
+    margin-top: 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.header-text p {
+    color: #003366;
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* 4. CONTEÚDO CENTRALIZADO (O CORPO DA PÁGINA) */
+.form-padding {
+    flex: 1; /* Ocupa todo o espaço central */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* CENTRALIZA VERTICALMENTE */
+    align-items: center;     /* CENTRALIZA HORIZONTALMENTE */
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-height: 50vh;
+}
+
+.form-padding p {
+    text-align: center;
+    max-width: 800px;
+}
+
+/* 5. O PORTAL (CARD E MOLDURA) */
+.portal-box {
+    background: rgba(255, 255, 255, 0.2); /* Moldura transparente da imagem */
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 750px;
+    margin: 20px 0;
+}
+
+.portal-header {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+}
+
+.portal-menu {
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: visible; /* Importante para a seta aparecer */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.portal-item {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f0f0f0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+/* BARRA COLORIDA NO RODAPÉ DO CARD */
+.portal-menu::after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: linear-gradient(to right, 
+        #4285F4 0%, #4285F4 33%, 
+        #34A853 33%, #34A853 66%, 
+        #FBBC05 66%, #FBBC05 100%);
+    border-radius: 0 0 4px 4px;
+}
+
+/* A SETA INDICATIVA (AMARELA) */
+.highlight-arrow {
+    position: relative;
+    background-color: #fff;
+}
+
+.highlight-arrow::after {
+    content: "➤";
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fdd835;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+
+/* 6. BOTÃO VOLTAR */
+.btn-grid-confirm {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.2s;
+}
+
+.btn-grid-confirm:hover {
+    opacity: 0.8;
+}
+
+.check-circle {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* 7. BARRA AZUL FIXA NO RODAPÉ DA PÁGINA */
+#renovacao::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #003366;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+    .header-text h1 { font-size: 1.6rem; }
+    .portal-box { padding: 15px; }
+    .highlight-arrow::after { right: -30px; font-size: 30px; }
+    .icon-box-static { width: 60px; height: 80px; }
+}

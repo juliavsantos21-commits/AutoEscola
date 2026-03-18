@@ -1,0 +1,139 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', Gadget, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO */
+section {
+    width: 100%; 
+    height: 100vh; 
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+    border-bottom: 40px solid #003366;
+}
+
+/* CABEÇALHOS E ÍCONES COMUNS */
+.header-internal { display: flex; padding: 20px 40px; align-items: flex-start; width: 100%; }
+
+.icon-box-static, .icon-box {
+    background-color: white; 
+    width: 80px; 
+    height: 100px;
+    border-radius: 0 0 15px 15px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.header-internal h1 { font-size: 2rem; color: white; text-transform: uppercase; }
+
+.icon-car {
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+/* CSS ESPECÍFICO PARA ACOMPANHAMENTO */
+.acompanhamento-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instruction-text {
+    color: #003366;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    margin: 15px 0 25px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-detran {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.menu-detran-item {
+    background-color: #4285F4; 
+    color: white;
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-family: Arial, sans-serif;
+    position: relative;
+    border: 1px solid #3367D6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-detran-item:hover {
+    background-color: #3367D6;
+    transform: scale(1.03);
+}
+
+.menu-detran-item.highlight::after {
+    content: "↖"; 
+    position: absolute;
+    right: -55px;
+    top: -10px;
+    color: #ffea00; 
+    font-size: 3.5rem;
+    line-height: 1;
+    transform: rotate(-15deg);
+    -webkit-text-stroke: 1.5px #003366;
+    pointer-events: none;
+}
+
+.status-card {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-left: 8px solid #003366;
+}
+
+/* BOTÕES E AUXILIARES */
+.btn-grid-confirm {
+    background-color: #e5c687;
+    color: #003366;
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #003366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}

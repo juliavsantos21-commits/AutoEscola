@@ -1,0 +1,120 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', Gadget, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO (AMARELO TOTAL COM FOOTER AZUL) */
+section {
+    width: 100%; 
+    min-height: 100vh; 
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    position: relative;
+}
+
+/* FOOTER AZUL AUTOMÁTICO */
+section::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: #003366;
+    display: block;
+}
+
+/* NAVBAR NO TOPO */
+.header-internal { 
+    display: flex; 
+    padding: 20px 40px; 
+    align-items: flex-start; 
+    width: 100%;
+    background-color: #d4a031;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icon-box-static {
+    background-color: white; 
+    width: 80px; 
+    height: 100px;
+    border-radius: 0 0 15px 15px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.header-internal h1 { font-size: 2rem; color: white; text-transform: uppercase; margin-left: 15px; }
+
+.icon-car {
+    width: 50px; height: 50px; background-color: #ffcc00;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.form-padding { 
+    padding: 20px 40px; 
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    flex-grow: 1; 
+}
+
+/* ESTILIZAÇÃO DOS ITENS DE CATEGORIA */
+.categorias-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.categoria-item {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.categoria-item:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(5px);
+}
+
+.categoria-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.categoria-texto {
+    color: #003366;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Ícone de seta "〉" */
+.categoria-item::after {
+    content: "〉";
+    color: #003366;
+    font-weight: bold;
+}
+
+/* BOTÃO UNIVERSAL (Caso use em algum lugar da página) */
+.btn-universal {
+    background-color: #e5c687; 
+    color: #003366; 
+    padding: 15px 30px; 
+    border-radius: 30px;
+    text-decoration: none; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    transition: 0.3s;
+}

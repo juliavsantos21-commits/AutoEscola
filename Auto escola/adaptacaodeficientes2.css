@@ -1,0 +1,147 @@
+/* Base e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #d19e2e; /* Cor de fundo amarela/dourada aproximada */
+    /* Se você tiver a imagem de fundo do carro, remova o comentário abaixo e ajuste o caminho */
+    /* background-image: url('caminho-para-imagem-do-carro.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra azul escura na parte inferior (Rodapé) */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #1a3c6d; /* Azul escuro do rodapé */
+    z-index: 10;
+}
+
+#renovacao-passo2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px; /* Espaço para não encostar na barra inferior */
+}
+
+/* Cabeçalho */
+.header-internal {
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    margin-bottom: 30px;
+}
+
+/* Aba branca (caixa do ícone) */
+.icon-box-static {
+    background-color: #ffffff;
+    width: 100px;
+    height: 130px;
+    border-radius: 0 0 25px 25px; /* Arredondado apenas na parte de baixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    top: -20px; /* Sobe um pouco a caixa para grudar no topo */
+}
+
+/* Ícone do Carro (usando máscara SVG para pintar de amarelo) */
+.icon-car {
+    width: 55px;
+    height: 55px;
+    background-color: #fabb05; /* Amarelo do ícone */
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.header-text p {
+    color: #1a3c6d;
+    font-weight: 900;
+    font-size: 0.95rem;
+    margin-top: -2px;
+}
+
+/* Área de Conteúdo Central */
+.form-padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+/* Caixa com fundo transparente */
+.portal-box {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+    width: 90%;
+    max-width: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Cartão Branco (Primeira Habilitação) */
+.renovacao-card {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    min-width: 400px; /* Largura mínima do card */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.renovacao-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.renovacao-card p {
+    font-size: 1.15rem !important;
+    line-height: 1.5;
+}
+
+/* Estilização do Botão Voltar (HTML inferior) */
+.btn-grid-confirm {
+    background-color: #ffffff;
+    color: #444;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-grid-confirm:hover {
+    background-color: #f1f1f1;
+}
+
+.check-circle {
+    color: #34A853; /* Verde do check */
+    font-weight: bold;
+}

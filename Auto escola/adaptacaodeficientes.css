@@ -1,0 +1,179 @@
+/* --- RESET E BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+body {
+    background-color: #fdb927;
+    overflow-x: hidden;
+}
+
+/* --- SEÇÃO PRINCIPAL --- */
+#renovacao {
+    width: 100%;
+    min-height: 100vh;
+    /* Substitua pela sua imagem de fundo se necessário */
+    background: linear-gradient(rgba(253, 185, 39, 0.9), rgba(253, 185, 39, 0.9)), 
+                url('caminho-da-sua-imagem-carro.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 45px solid #003366; /* Barra azul do rodapé */
+}
+
+/* --- HEADER (Ícone e Título) --- */
+.header-internal {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.icon-box-static {
+    background-color: #fff;
+    width: 100px;
+    height: 130px;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-right: 30px;
+}
+
+.icon-car {
+    width: 70px;
+    height: 50px;
+    background-color: #fdb927;
+    /* Ícone de carro */
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+.header-text {
+    margin-top: 25px;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.header-text p {
+    color: #003366;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: -5px;
+}
+
+/* --- CONTEÚDO CENTRAL --- */
+.form-padding {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-padding p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* --- O PORTAL (CARD) --- */
+.portal-box {
+    background: rgba(255, 255, 255, 0.2); /* Moldura transparente */
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 550px;
+    margin: 20px 0;
+}
+
+.portal-header {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #eee;
+    border-radius: 8px 8px 0 0;
+}
+
+.portal-menu {
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    overflow: visible;
+}
+
+.portal-item {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+    background-color: #2b5797; /* Azul dos itens do portal */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.portal-item span {
+    font-size: 1.2rem;
+}
+
+/* Item em destaque com a seta */
+.highlight-arrow {
+    position: relative;
+    background-color: #1e3d6b; /* Azul mais escuro para o destaque */
+}
+
+.highlight-arrow::after {
+    content: "➤";
+    position: absolute;
+    right: -55px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fdd835;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* --- BOTÃO VOLTAR --- */
+.btn-grid-confirm {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-circle {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- AJUSTES DE HOVER --- */
+.portal-item:hover {
+    filter: brightness(1.2);
+}

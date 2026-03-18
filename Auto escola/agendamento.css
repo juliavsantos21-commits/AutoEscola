@@ -1,0 +1,100 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', Gadget, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO (AMARELO TOTAL COM FOOTER AZUL) */
+section {
+    width: 100%; 
+    min-height: 100vh; 
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; /* Empurra o conteúdo para cima e o footer para baixo */
+    position: relative;
+}
+
+/* FOOTER AZUL AUTOMÁTICO */
+section::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-color: #003366;
+    display: block;
+}
+
+/* NAVBAR (CABEÇALHO FIXO NO TOPO) */
+.header-internal { 
+    display: flex; 
+    padding: 20px 40px; 
+    align-items: flex-start; 
+    width: 100%;
+    background-color: #d4a031;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.icon-box-static {
+    background-color: white; width: 80px; height: 100px;
+    border-radius: 0 0 15px 15px; display: flex; justify-content: center; align-items: center;
+}
+
+.header-internal h1 { font-size: 2rem; color: white; text-transform: uppercase; margin-left: 15px; }
+.header-internal p { margin-left: 15px; }
+
+.icon-car {
+    width: 50px; height: 50px; background-color: #ffcc00;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+/* FORMULÁRIO */
+.form-padding { 
+    padding: 20px 100px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    flex-grow: 1; /* Faz o formulário ocupar o espaço central */
+}
+
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 30px; }
+
+.input-group { margin-bottom: 10px; width: 100%; }
+.input-group label { color: #003366; font-weight: bold; display: block; margin-bottom: 5px; font-size: 0.9rem; }
+
+.input-group input, .input-group select {
+    width: 100%; padding: 12px; border-radius: 8px; border: none;
+    background: rgba(255,255,255,0.4); color: #003366; font-weight: bold;
+}
+
+/* BOTÃO CONFIRMAR */
+.btn-grid-confirm {
+    background-color: #e5c687; 
+    color: #003366; 
+    padding: 12px 40px; 
+    border-radius: 30px;
+    text-decoration: none; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    border: none; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-grid-confirm:hover { background-color: #d4b061; }
+
+.check-circle {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #003366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+}

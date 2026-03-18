@@ -1,0 +1,189 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS E RESET
+========================================= */
+html { 
+    scroll-behavior: smooth; 
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Arial Black', Gadget, sans-serif; 
+}
+
+body { 
+    background-color: #f4f4f4; 
+    overflow-x: hidden; 
+}
+
+/* =========================================
+   ESTRUTURA DE SEÇÃO
+========================================= */
+section {
+    width: 100%; 
+    min-height: 100vh; /* Permite que a tela estique sem cortar o conteúdo */
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    overflow-x: hidden; /* Evita corte nas laterais, mas permite rolar para baixo */
+    border-bottom: 40px solid #003366;
+}
+
+/* =========================================
+   CABEÇALHOS E ÍCONES COMUNS
+========================================= */
+.header-internal { 
+    display: flex; 
+    padding: 20px 40px; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+.icon-box-static, 
+.icon-box {
+    background-color: white; 
+    width: 80px; 
+    height: 100px;
+    border-radius: 0 0 15px 15px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.header-internal h1 { 
+    font-size: 2rem; 
+    color: white; 
+    text-transform: uppercase; 
+}
+
+.icon-car {
+    width: 50px;
+    height: 50px;
+    background-color: #ffcc00;
+    -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask: url('https://cdn-icons-png.flaticon.com/512/741/741407.png') no-repeat center;
+    mask-size: contain;
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+.btn-universal {
+    background-color: #e5c687; 
+    color: #003366; 
+    padding: 15px 30px; 
+    border-radius: 30px;
+    text-decoration: none; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    transition: 0.3s;
+}
+
+.btn-servico {
+    display: block; 
+    width: 100%; 
+    background: rgba(255,255,255,0.4);
+    color: #003366; 
+    padding: 15px; 
+    text-decoration: none; 
+    font-weight: 900;
+}
+
+/* =========================================
+   FORMULÁRIOS
+========================================= */
+.form-padding { 
+    padding: 20px 100px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.form-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px 30px; 
+}
+
+.input-group { 
+    margin-bottom: 10px; 
+    width: 100%; 
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 8px; 
+    border: none;
+    background: rgba(255,255,255,0.4); 
+    color: #003366; 
+    font-weight: bold;
+}
+/* =========================================
+   AJUSTE PARA A SECTION PARECER NAVBAR
+========================================= */
+
+/* =========================================
+   AJUSTE PARA TELA CHEIA AMARELA COM NAVBAR NO TOPO
+========================================= */
+/* =========================================
+   ESTRUTURA DE SEÇÃO COM FOOTER AZUL
+========================================= */
+section {
+    width: 100%; 
+    min-height: 100vh; /* Garante o amarelo na tela toda */
+    background-color: #d4a031;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; /* Empurra o footer para o final */
+    position: relative; 
+    overflow-x: hidden;
+}
+
+/* Criando o Footer Azul */
+section::after {
+    content: "";
+    width: 100%;
+    height: 60px; /* Altura do footer azul */
+    background-color: #003366;
+    display: block;
+}
+
+/* =========================================
+   AJUSTE PARA NAVBAR NO TOPO
+========================================= */
+.header-internal { 
+    display: flex; 
+    padding: 20px 40px; 
+    align-items: flex-start; 
+    width: 100%;
+    background-color: #d4a031; /* Cor da navbar igual ao fundo */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Garante que o conteúdo principal (formulário) cresça para ocupar o espaço */
+.area-principal, .form-padding {
+    flex-grow: 1; /* Faz o conteúdo "empurrar" o footer para baixo */
+}
+#inscricao {
+    min-height: 100vh; /* Garante que o amarelo desça até o final da tela */
+    justify-content: flex-start; /* Empurra o cabeçalho e o formulário para o topo */
+    border-bottom: none; /* Remove a borda azul do final, se quiser tudo amarelo */
+    padding-bottom: 40px; 
+}
+
+/* Transforma o cabeçalho numa NavBar fixa no topo */
+#inscricao .header-internal {
+    position: sticky; 
+    top: 0; 
+    background-color: #d4a031; /* Fundo amarelo para a navbar */
+    z-index: 999; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para separar a navbar do resto */
+}

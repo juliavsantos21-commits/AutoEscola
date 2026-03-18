@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran SE - Pagamento CNH PCD</title>
+    <link rel="stylesheet" href="pagamento.dfct.css">
+</head>
+<body>
+
+    <section id="pagamento-section">
+        <header class="header-internal">
+            <div class="icon-box-static">
+                <div class="icon-car"></div>
+            </div>
+            <div class="header-text">
+                <h1>NOSSOS SERVIÇOS</h1>
+                <p style="color: #003366; font-weight: 900; margin-left: 20px; font-family: 'Arial Black', Gadget, sans-serif;">ADAPTAÇÃO PARA DEFICIENTES:</p>
+            </div>
+        </header>
+
+        <main class="area-principal">
+            
+            <div class="alerta-instrucao">
+                FAÇA O PAGAMENTO, E ESPERE O RESULTADO DA SOLICITAÇÃO PELO SITE DO DETRAN
+            </div>
+
+            <div class="detran-wrapper">
+                <div class="card-detran">
+                    <div class="topo-detran">
+                        <div class="logo-detran">DETRAN<br><span style="font-size: 0.4rem; font-style: normal; color: #666;">Departamento Estadual de Trânsito</span></div>
+                        <div class="gov-br" style="font-family: sans-serif; font-weight: bold; color: #004499; font-size: 0.8rem;">Portal do Governo</div>
+                    </div>
+
+                    <h2 class="titulo-pagamento">Pagamento de CNH para pessoas com deficiência (PCD)</h2>
+
+                    <div class="conteudo-form">
+                        <form action="servicos.html">
+                            <fieldset class="secao-dados">
+                                <legend>Dados do Solicitante</legend>
+                                <div class="input-group-detran">
+                                    <label>CPF:</label>
+                                    <input type="text" placeholder="123.456.789-00" required>
+                                </div>
+                                <div class="input-group-detran">
+                                    <label>RENACH:</label>
+                                    <input type="text" placeholder="987654123" required>
+                                </div>
+                                <div class="input-group-detran">
+                                    <label>Data de Nascimento:</label>
+                                    <input type="text" placeholder="15/03/1985" required>
+                                </div>
+                                <div class="linha-dado" style="margin-top: 10px;">
+                                    <strong>Código de Verificação:</strong> 
+                                    <span class="captcha" style="background: #eef5ff; color: #003366; padding: 4px 10px; font-family: Arial; font-size: 1.1rem; font-weight: bold; letter-spacing: 2px;">7V8BK</span>
+                                    <input type="text" placeholder="Digite o código" class="input-captcha" style="width: 110px; padding: 4px; margin-left: 10px; border: 1px solid #ccc; outline: none;" required>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="secao-dados">
+                                <legend>Detalhes da Solicitação</legend>
+                                <p class="linha-dado"><strong>Serviço:</strong> CNH para pessoas com deficiência (PCD)</p>
+                                <p class="linha-dado"><strong>Categoria:</strong> Inclusão ou Adaptação PCD</p>
+                                <p class="linha-dado"><strong>Taxa:</strong> <span class="azul-destaque">R$ 2500,00</span></p>
+                                <p class="linha-dado"><strong>Prazo de Entrega:</strong> 10 a 15 dias úteis</p>
+                            </fieldset>
+
+                            <div class="pagamento-container">
+                                <div class="titulo-secao-pagamento">Escolha a Forma de Pagamento</div>
+                                <div class="grid-pagamento">
+                                    <input type="radio" name="metodo" id="card" hidden>
+                                    <label for="card" class="item-pagamento">💳<br>Pagar com Cartão</label>
+
+                                    <input type="radio" name="metodo" id="boleto" hidden>
+                                    <label for="boleto" class="item-pagamento">📋<br>Gerar Boleto</label>
+
+                                    <input type="radio" name="metodo" id="pix" hidden checked>
+                                    <label for="pix" class="item-pagamento">✨<br>Pagar com PIX</label>
+
+                                    <input type="radio" name="metodo" id="debito" hidden>
+                                    <label for="debito" class="item-pagamento">🏦<br>Débito em Conta</label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-confirmar">Confirmar Pagamento</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+html { scroll-behavior: smooth; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial Black', Gadget, sans-serif; }
+body { background-color: #f4f4f4; overflow-x: hidden; }
+
+/* ESTRUTURA DE SEÇÃO */
+section {
+    width: 100%; 
+    height: 100vh; 
+    background-color: #d4a031;
+    position: relative; 
+    overflow: hidden; 
+    border-bottom: 40px solid #003366;
+}
+
+/* ÍCONE DO CARRO (TOPO DIREITA) */
+.icon-box {
+    position: absolute;
+    top: 0;
+    right: 8%; 
+    background-color: white; 
+    width: 110px; 
+    height: 140px;
+    border-radius: 0 0 20px 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    z-index: 5; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* MÁSCARA DO CARRO AMARELO */
+.icon-car {
+    width: 60px; height: 60px; background-color: #ffcc00;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-16h288v16c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V272c0-19.22-8.65-36.27-22.07-48h20.07c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zM128 352c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm256 0c-22.09 0-40-17.91-40-40s17.91-40 40-40 40 17.91 40 40-17.91 40-40 40zm-68.58-160H96.58L116.1 141.2C122.94 124.08 139.26 112 157.5 112h197c18.24 0 34.56 12.08 41.4 29.2L415.42 192h-199z"/></svg>') no-repeat center;
+}
+
+/* IMAGEM DA ESQUERDA COM CURVA */
+.image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%; 
+    height: 100%; 
+    background-color: #ccc; 
+    background-image: url('aluna.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 0 40% 45% 0 / 0 50% 50% 0; 
+    box-shadow: 15px 0 30px rgba(0,0,0,0.3); 
+    z-index: 2;
+}
+
+/* ÁREA DE TEXTOS À DIREITA */
+.content-section {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 40%; 
+    max-width: 600px; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    z-index: 3; 
+    text-align: center;
+}
+
+.content-section h1 { 
+    font-size: 3.5rem; 
+    color: white; 
+    text-transform: uppercase; 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+/* FAIXA APRESENTAÇÃO DE SERVIÇOS */
+.subtitle {
+    background-color: #dfc17f; 
+    color: #003366;
+    padding: 10px 25px; 
+    border-radius: 8px; 
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BOTÃO CADASTRE-SE */
+.btn-universal {
+    background-color: #dfc17f; 
+    color: #003366; 
+    padding: 12px 35px; 
+    border-radius: 30px;
+    text-decoration: none; 
+    font-weight: 900; 
+    text-transform: uppercase; 
+    transition: 0.3s;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.btn-universal:hover { background-color: #d1b16c; }

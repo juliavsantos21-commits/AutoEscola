@@ -1,0 +1,128 @@
+/* --- Estilos de Estrutura e Fundo --- */
+#renovacao-passo3 {
+    background-color: #fdb927; /* Amarelo principal */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Moldura Transparente externa */
+.detran-wrapper {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- O Formulário Branco --- */
+.detran-form {
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    font-size: 11px; /* Estilo padrão Detran */
+    color: #333;
+}
+
+/* Cabeçalho do Formulário (Cinza) */
+.detran-header {
+    background: #f0f0f0;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.detran-body {
+    padding: 15px;
+}
+
+/* Linhas e Campos */
+.detran-row {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.detran-cols {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.detran-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+/* Inputs e Selects */
+.detran-form input[type="text"], 
+.detran-form select {
+    border: 1px solid #999;
+    padding: 2px 4px;
+    font-size: 11px;
+    height: 22px;
+}
+
+.detran-form input[type="radio"] {
+    vertical-align: middle;
+}
+
+/* --- Rodapé do Formulário (Captcha e Botão) --- */
+.detran-footer-top {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    min-height: 40px;
+}
+
+.detran-footer-bottom {
+    background: #fff;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: flex-end; /* Botão à direita */
+    border-top: 1px solid #eee;
+}
+
+/* Botão Confirmar (Azul) */
+.detran-btn-confirm {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+}
+
+.detran-btn-confirm:hover {
+    background-color: #3367d6;
+}
+
+/* Ajustes de Tipografia */
+.detran-form strong {
+    font-weight: bold;
+    color: #444;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .detran-cols {
+        flex-direction: column;
+        gap: 0;
+    }
+    .detran-wrapper {
+        padding: 10px;
+    }
+}
